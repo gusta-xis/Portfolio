@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Luiz Gustavo</title>
+    <!-- Importando a mesma fonte do seu index.html para consistência -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
     <style>
         body {
-            /* ALTERADO */
-            background-color: #D8BFD8; /* Roxo pastel */
-            /* ALTERADO - Cor escura para contraste */
+            /* Fundo roxo pastel mantido */
+            background-color: #D8BFD8; 
             color: #333333; 
-            font-family: 'Courier New', monospace;
+            font-family: 'Josefin Sans', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,17 +23,26 @@
 
         .container {
             text-align: center;
-            animation: fadeIn 3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
+            padding: 20px;
         }
 
         .typing {
-            font-size: 2em;
-            /* O cursor roxo original (#ad20fc) funciona bem com o fundo pastel */
+            font-size: 2.5em;
             border-right: 3px solid #ad20fc;
             white-space: nowrap;
             overflow: hidden;
             width: 0;
-            animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+            margin: 0 auto;
+            animation: typing 2.5s steps(30, end) forwards, blink 0.75s step-end infinite;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            margin-top: 15px;
+            opacity: 0;
+            /* O subtítulo aparece suavemente após o nome ser digitado */
+            animation: fadeInSubtitle 1.5s ease-in-out 2.5s forwards; 
         }
 
         @keyframes typing {
@@ -47,14 +58,32 @@
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        @keyframes fadeInSubtitle {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsividade para telas de celulares */
+        @media (max-width: 600px) {
+            .typing {
+                font-size: 1.6em;
+            }
+            .subtitle {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="typing">Olá, eu sou Luiz Gustavo</h1>
-        <p>Desenvolvedor em formação com foco em JavaScript</p>
+        <!-- Texto atualizado para refletir o seu perfil atual -->
+        <p class="subtitle">UX/UI Designer & Desenvolvedor</p>
+        
         <script>
             window.addEventListener('load', () => {
+                // Redireciona para o index.html após 5 segundos
                 setTimeout(() => {
                     window.location.href = 'index.html';
                 }, 5000);
