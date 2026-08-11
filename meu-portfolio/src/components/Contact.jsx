@@ -1,14 +1,15 @@
 import React from 'react';
 import './Contact.css';
-import { FiLinkedin, FiGithub, FiInstagram, FiMail, FiMessageCircle, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiInstagram, FiMail, FiMessageCircle, FiPhone } from 'react-icons/fi';
 
 export default function Contact() {
   return (
     <footer className="contact" id="contato">
       <div className="contact-content">
-        <h2 className="section-title gradient-text">Vamos Conversar?</h2>
+        <h2 className="section-title gradient-text">Vamos Criar Algo Juntos?</h2>
         <p className="contact-subtitle">
-          Estou disponível para novas oportunidades em desenvolvimento de software e tecnologia. Entre em contato!
+          Estou disponível para oportunidades em desenvolvimento front-end, UX/UI design e design de produtos digitais. 
+          Vamos conversar sobre como posso agregar ao seu time ou projeto!
         </p>
 
         <div className="contact-cards">
@@ -54,7 +55,7 @@ export default function Contact() {
       
       <div className="footer-bottom">
         <h6>Luiz Gustavo Gouvêa Damascena</h6>
-        <p>Desenvolvedor de Software & Analista de TI • {new Date().getFullYear()}</p>
+        <p>Desenvolvedor Front-End · UX/UI · Product Designer • {new Date().getFullYear()}</p>
       </div>
     </footer>
   );

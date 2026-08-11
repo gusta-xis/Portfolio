@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import { FiCheckCircle, FiAward, FiBookOpen, FiUser } from 'react-icons/fi';
+import { FiAward, FiBookOpen, FiLayout, FiPenTool } from 'react-icons/fi';
 
 export default function About() {
   return (
@@ -9,44 +9,46 @@ export default function About() {
         <div className="about-image">
           <img src="/img/Foto.png" alt="Luiz Gustavo Gouvêa Damascena" />
           <div className="experience-badge">
-            <span className="badge-title">Análise & Dev</span>
-            <span className="badge-subtitle">UCB 2026</span>
+            <span className="badge-title">Dev & Design</span>
+            <span className="badge-subtitle">Code · UX · Product</span>
           </div>
         </div>
         
         <div className="about-text">
           <h2 className="section-title gradient-text">Sobre Mim</h2>
-          <h5>Desenvolvedor & Analista de Sistemas</h5>
+          <h5>Desenvolvedor Front-End & Product Designer</h5>
           
           <p>
-            Profissional graduado em <strong>Análise e Desenvolvimento de Sistemas pela Universidade Católica de Brasília (UCB)</strong>, 
-            com sólida trajetória no suporte técnico, sustentação de aplicações e desenvolvimento de sistemas corporativos.
+            Sou <strong>Luiz Gustavo</strong>, graduado em <strong>Análise e Desenvolvimento de Sistemas pela UCB</strong>. 
+            Minha atuação vive na intersecção entre <strong>desenvolvimento e design</strong> — acredito que um bom produto 
+            digital nasce quando código limpo encontra uma experiência de usuário bem pensada.
           </p>
           <p>
-            Tenho atuação com <strong>JavaScript, HTML, CSS, SQL e Delphi</strong>, criando soluções eficientes e com forte apreço por UX/UI (Figma, wireframing e prototipação). 
-            Possuo perfil analítico, proativo e focado em otimização de processos e inovação tecnológica.
+            Trabalho com <strong>React, Next.js, Node.js e JavaScript</strong> no desenvolvimento, e com 
+            <strong> Figma, wireframing, prototipação e design systems</strong> na construção de interfaces. 
+            Meu objetivo é criar produtos que sejam bonitos, funcionais e centrados no usuário.
           </p>
 
           <div className="highlights-grid">
             <div className="highlight-card">
-              <FiBookOpen className="highlight-icon" />
+              <FiLayout className="highlight-icon" />
               <div>
-                <h4>Formação</h4>
-                <p>ADS – UCB (2026)</p>
+                <h4>Front-End</h4>
+                <p>React · Next.js · JS</p>
+              </div>
+            </div>
+            <div className="highlight-card">
+              <FiPenTool className="highlight-icon" />
+              <div>
+                <h4>UX / UI Design</h4>
+                <p>Figma · Prototipação</p>
               </div>
             </div>
             <div className="highlight-card">
               <FiAward className="highlight-icon" />
               <div>
-                <h4>Foco Técnico</h4>
-                <p>Full-Stack & UX/UI</p>
-              </div>
-            </div>
-            <div className="highlight-card">
-              <FiUser className="highlight-icon" />
-              <div>
-                <h4>Perfil</h4>
-                <p>Analítico & Proativo</p>
+                <h4>Product Design</h4>
+                <p>Design System · Research</p>
               </div>
             </div>
           </div>

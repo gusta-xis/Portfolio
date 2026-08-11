@@ -76,7 +76,7 @@ export default function Experience() {
     <section className="experience" id="experiencia">
       <div className="experience-container">
         <h2 className="section-title gradient-text">Experiência Profissional</h2>
-        <p className="section-subtitle">Minha trajetória em suporte, desenvolvimento de software e gestão de sistemas</p>
+        <p className="section-subtitle">Minha trajetória em desenvolvimento de software, design de interfaces e produto digital</p>
         
         <div className="timeline">
           {experiences.map((exp, index) => (

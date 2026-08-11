@@ -6,26 +6,26 @@ export default function Projects() {
   const projects = [
     {
       title: "GAP – Gestão Pessoal e Orçamentária",
-      badge: "Projeto Pessoal • Em Desenvolvimento",
-      description: "Aplicação web modular para gerenciamento pessoal e controle orçamentário. Conta com backend em Node.js, banco PostgreSQL (Neon), e fluxos completos de autenticação (cadastro, verificação por código e recuperação de senha).",
-      tech: ["React / Next.js", "Node.js", "JavaScript", "PostgreSQL (Neon)"],
+      badge: "Full-Stack • UX/UI • Em Desenvolvimento",
+      description: "Aplicação web modular que projetei e desenvolvi do zero — desde os wireframes e fluxos de usuário no Figma até o código em produção. Conta com backend em Node.js, banco PostgreSQL (Neon), e interface pensada para usabilidade e acessibilidade.",
+      tech: ["React / Next.js", "Node.js", "PostgreSQL", "Figma", "Design System"],
       demoLink: "https://sistemas-gap.vercel.app",
       githubLink: "https://github.com/gusta-xis/Gap",
       featured: true
     },
     {
       title: "Projeto Quiz Interativo",
-      badge: "Projeto Universitário",
-      description: "Aplicação web interativa desenvolvida para testar conhecimentos e lógica de programação, com interface dinâmica e responsiva.",
-      tech: ["HTML5", "CSS3", "JavaScript"],
+      badge: "Front-End • Design",
+      description: "Aplicação interativa com foco na experiência do usuário — interface responsiva, transições suaves e design centrado em engajamento e diversão.",
+      tech: ["HTML5", "CSS3", "JavaScript", "UI Design"],
       demoLink: "https://gusta-xis.github.io/",
       githubLink: "https://github.com/gusta-xis",
       featured: false
     },
     {
-      title: "GitHub & Repositórios Code",
+      title: "GitHub & Repositórios",
       badge: "Portfólio de Código",
-      description: "Explore o perfil no GitHub para ver estes e outros projetos de automação, desenvolvimento web e experimentos práticos.",
+      description: "Explore meu perfil no GitHub para ver projetos de desenvolvimento web, experimentos de UI e prototipação de interfaces.",
       tech: ["Git", "GitHub", "Open Source"],
       demoLink: "https://github.com/gusta-xis",
       githubLink: "https://github.com/gusta-xis",
@@ -37,7 +37,7 @@ export default function Projects() {
     <section className="projects" id="projetos">
       <div className="projects-container">
         <h2 className="section-title gradient-text">Projetos em Destaque</h2>
-        <p className="section-subtitle">Aplicações e soluções desenvolvidas com foco em qualidade e usabilidade</p>
+        <p className="section-subtitle">Produtos digitais que projetei e desenvolvi, do conceito à implementação</p>
         
         <div className="projects-grid">
           {projects.map((project, index) => (

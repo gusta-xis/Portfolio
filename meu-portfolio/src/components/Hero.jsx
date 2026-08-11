@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import { FiGithub, FiLinkedin, FiMail, FiMessageCircle, FiMapPin } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMessageCircle, FiMapPin } from 'react-icons/fi';
 
 export default function Hero() {
   return (
@@ -11,11 +11,12 @@ export default function Hero() {
         </div>
         <h4>Olá, meu nome é</h4>
         <h1 className="gradient-text">Luiz Gustavo Gouvêa Damascena</h1>
-        <h3>Desenvolvedor de Software & Analista de TI</h3>
+        <h3>Desenvolvedor Front-End, UX/UI & Product Designer</h3>
         
         <p className="hero-description">
-          Graduado em Análise e Desenvolvimento de Sistemas (UCB), com experiência em sustentação, 
-          suporte técnico e desenvolvimento de sistemas web (JavaScript, React, Next.js, Node.js, SQL e Delphi).
+          Crio experiências digitais que unem código e design — do wireframe ao deploy. 
+          Trabalho com React, Next.js e Figma para transformar ideias em produtos funcionais, 
+          acessíveis e visualmente impactantes.
         </p>
 
         <div className="hero-actions">
