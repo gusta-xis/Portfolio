@@ -1,12 +1,12 @@
 .contact {
-  background-color: #030303;
-  padding: 6rem 5% 2rem;
+  background-color: #030304;
+  padding: 7rem 5% 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   text-align: center;
 }
 
 .contact-content {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto 4rem;
 }
 
@@ -16,14 +16,61 @@
   margin-bottom: 3rem;
 }
 
-.contact-btn {
-  margin-bottom: 4rem;
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.contact-info-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.info-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.card-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-val {
+  display: block;
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.cta-container {
+  margin-bottom: 3rem;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -31,8 +78,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -44,20 +91,21 @@
   background: var(--primary);
   color: #000;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(217, 0, 255, 0.3);
+  box-shadow: 0 5px 20px rgba(217, 0, 255, 0.4);
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 .footer-bottom h6 {
-  font-size: 1.2rem;
-  color: var(--text-main);
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .footer-bottom p {
